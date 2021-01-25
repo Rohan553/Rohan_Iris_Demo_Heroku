@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+
+
+<head><title>Deploy here</title></head>
+
+<body bgColor = "lightgrey" >
+
+
+
+
+
+<!-- <h2> Model deployment live </h2>
+
+<p>Hello this is my 1st deployment of self build model - Rohan<p> <br> -->
+
+<center><img src = "{{ url_for('static', filename="maxresdefault.jpg") }}" height="200" width = "300" class = "center"/></center>
+
+
+
+<!-- <p>Please support me in this run</p> -->
+
+<center><h3>Input Values : (Please enter only floating numeric values to get the result)</h3> </center>
+
+<center><form action= "/prediction" method = "POST">
+Sepal Length : <input type = "text" name="sep_len" placeholder = "Enter the Value"> <br> <br>
+Sepal Width : <input type = "text" name="sep_wid" placeholder = "Enter the Value"> <br> <br>
+Petal Length : <input type = "text" name="pet_len" placeholder = "Enter the Value"> <br> <br>
+Petal Width : <input type = "text" name="pet_wid" placeholder = "Enter the Value"> <br> <br> <br>
+
+<!-- Select Gender :<input type = "radio" name = "Gender">Male -->
+<!-- <input type = "radio" name = "Gender">Female -->
+<!-- <input type = "radio" name = "Gender">Others <br> -->
+
+
+<button type = "submit" name = "button" value = "submit">Predict</button>
+
+<br>
+<br>
+<br>
+<br>
+<center><a href = '/'>
+Main Page
+</a>
+</center>
+
+</form>
+</center>
+
+
+</body>
+
+</html>
